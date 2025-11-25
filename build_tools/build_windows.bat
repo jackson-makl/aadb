@@ -43,10 +43,10 @@ pyinstaller --noconfirm --clean ^
     --onefile ^
     --windowed ^
     %ICON_FLAG% ^
-    --add-data "app.py;." ^
-    --add-data "data_loader.py;." ^
-    --add-data "risk_predictor.py;." ^
-    --add-data "config.py;." ^
+    --add-data "src/app.py;." ^
+    --add-data "src/data_loader.py;." ^
+    --add-data "src/risk_predictor.py;." ^
+    --add-data "src/config.py;." ^
     --add-data "models;models" ^
     --add-data "data;data" ^
     --add-data ".streamlit;.streamlit" ^
@@ -64,7 +64,7 @@ pyinstaller --noconfirm --clean ^
     --hidden-import "seaborn" ^
     --collect-all streamlit ^
     --collect-all altair ^
-    app_launcher.py
+    src/app_launcher.py
 
 echo.
 echo ======================================================================

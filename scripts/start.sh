@@ -14,9 +14,11 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-# Script directory
+# Script directory (scripts folder)
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd "$SCRIPT_DIR"
+# Project root (parent of scripts folder)
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_ROOT"
 
 echo -e "${BLUE}"
 echo "════════════════════════════════════════════════════════════════"
@@ -199,7 +201,7 @@ if [ -f "$MODEL_FILE" ]; then
     if [[ $REPLY =~ ^[Yy]$ ]]; then
         echo "Running analysis and training model..."
         echo "═══════════════════════════════════════════════════════════"
-        python main_analysis.py
+        python src/main_analysis.py
         echo "═══════════════════════════════════════════════════════════"
         echo -e "${GREEN}✓ Analysis complete and model trained${NC}"
     fi
@@ -209,7 +211,7 @@ else
     
     # Check if main_analysis.py exists
     if [ -f "main_analysis.py" ]; then
-        python main_analysis.py
+        python src/main_analysis.py
     else
         echo -e "${YELLOW}⚠ main_analysis.py not found. Using alternative training...${NC}"
         python -c "
@@ -247,8 +249,8 @@ fi
 echo ""
 echo -e "${YELLOW}[5/5] Launching Streamlit application...${NC}"
 
-if [ ! -f "app.py" ]; then
-    echo -e "${RED}✗ app.py not found${NC}"
+if [ ! -f "src/app.py" ]; then
+    echo -e "${RED}✗ src/app.py not found${NC}"
     exit 1
 fi
 
@@ -267,7 +269,7 @@ echo "════════════════════════�
 echo ""
 
 # Run Streamlit
-streamlit run app.py
+streamlit run src/app.py
 
 # This line will only execute if Streamlit exits
 echo ""

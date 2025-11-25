@@ -25,7 +25,7 @@ jobs:
       
       - name: Build Windows EXE
         run: |
-          .\build_windows.bat
+          .\build_tools\build_windows.bat
       
       - name: Upload Windows Artifact
         uses: actions/upload-artifact@v4
@@ -51,8 +51,8 @@ jobs:
       
       - name: Build macOS App
         run: |
-          chmod +x build_mac.sh
-          ./build_mac.sh
+          chmod +x build_tools/build_mac.sh
+          ./build_tools/build_mac.sh
       
       - name: Create DMG
         run: |
