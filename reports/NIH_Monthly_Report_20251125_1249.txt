@@ -1,0 +1,47 @@
+================================================================================
+AADB DATA ACCESS - MONTHLY REPORT FOR NIH
+Reporting Period: November 2025
+================================================================================
+
+KEY PERFORMANCE INDICATORS
+--------------------------------------------------------------------------------
+
+Metric                         Current                   Target                    Status    
+--------------------------------------------------------------------------------
+Average Total Process Time     165 days                  100 days                  ✗         
+IRB Process Time               120 days (12% on target)  ≤60 days (80% target)     ✗         
+DUA Process Time               155 days (7% on target)   ≤90 days (80% target)     ✗         
+
+
+PROGRESS UPDATES
+--------------------------------------------------------------------------------
+
+• Projects Completed: 14
+• Total Active Projects: 17
+• High-Risk Projects Requiring Intervention: 9
+
+
+CHALLENGES AND MITIGATION STRATEGIES
+--------------------------------------------------------------------------------
+
+1. CRITICAL: IRB compliance at 11.8% (Target: 80%)
+2. CRITICAL: DUA compliance at 5.9% (Target: 80%)
+3. WARNING: 4 projects (23.5%) exceeding 180 days
+4. BOTTLENECK: NOA to Initial Consult at 2.5x benchmark
+5. BOTTLENECK: Intake to Request Submission at 1.6x benchmark
+6. BOTTLENECK: Submission to Finalization at 2.0x benchmark
+7. BOTTLENECK: IRB Process at 2.0x benchmark
+8. BOTTLENECK: DUA Process at 1.7x benchmark
+9. BOTTLENECK: Total Process (NOA to Access) at 1.6x benchmark
+
+
+ACTION ITEMS FOR NEXT PERIOD
+--------------------------------------------------------------------------------
+
+1. Accelerate initial consultation scheduling: Currently 74 days avg (target: 30 days). Increase staff capacity.
+2. Address Submission to Finalization delays: Reduce from 61 to 30 days through process optimization.
+3. Streamline IRB process: Currently 120 days avg (target: 60 days). Consider expedited review procedures.
+4. Focus improvement efforts on CDP: Only 0% meeting all targets. Conduct detailed process review.
+5. Focus improvement efforts on CLINAQ Cohort 1: Only 0% meeting all targets. Conduct detailed process review.
+
+================================================================================

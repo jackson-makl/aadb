@@ -1,0 +1,15 @@
+[global]
+developmentMode = false
+
+[server]
+headless = true
+runOnSave = false
+fileWatcherType = "none"
+enableXsrfProtection = false
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8501
+

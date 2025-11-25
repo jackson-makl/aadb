@@ -1,0 +1,21 @@
+Name,Program,NOA,Intake Consult,# of days to consult from NOA,Data Request Submitted,# of days to submit request from Intake,Data Consult (if any),Data Request Finalized,# of days to finalize request from submission,IRB Submitted*,IRB Determination shared with AADB,"# of days for IRB
+(NIH Target=60)",DUA information shared,# of days to share DUA information from Intake,DUA Draft Sent,FE DUA,"# of days for DUA
+(NIH Target=90)",Data Access Provided,# of days to Data Access from NOA,Data Access Confirmed,,Notes
+Alexandra Kakadiaris,Research Fellowship Cohort  3,9/26/2024,10/21/2024,25,10/31/2024,10,,11/26/2024,26,,12/9/2024,74,10/28/2024,7,12/6/2024,1/2/2025,98,1/23/2025,119,1/23/2025,119,
+Andrew Nguyen,Research Fellowship Cohort  3,9/26/2024,10/17/2024,21,10/22/2024,5,,12/23/2024,62,,2/15/2025,142,11/22/2024,36,12/24/2024,3/20/2025,175,3/25/2025,180,4/1/2025,187,-Requirement of GPUs
+Howard Prioleau,Research Fellowship Cohort  3,9/26/2024,10/21/2024,25,10/28/2024,7,"12/2/2024
+12/20/2024",1/14/2025,78,,3/23/2025,178,,,1/21/2025,5/8/2025,224,5/9/2025,225,,,Delays in finalizing data request
+Korin Reid,Research Fellowship Cohort  3,9/26/2024,10/31/2024,35,11/21/2024,21,12/12/2024,1/14/2025,54,,3/5/2025,160,10/11/2024,-20,1/21/2025,2/4/2025,131,3/19/2025,174,3/27/2025,182,Delays in finalizing data request
+Ling Zhang,Research Fellowship Cohort  3,9/26/2024,11/4/2024,39,11/12/2024,8,12/9/2024,12/10/2024,28,,1/6/2025,102,10/15/2024,-20,12/17/2024,2/4/2025,131,2/10/2025,137,2/13/2025,140,
+Lucretia Williams,Research Fellowship Cohort  3,9/26/2024,10/15/2024,19,10/23/2024,8,11/18/2024,11/20/2024,28,,2/3/2025,130,10/30/2024,15,12/6/2024,4/2/2025,188,4/3/2025,189,4/10/2025,196,
+Pegah Ahadian,Research Fellowship Cohort  3,9/26/2024,11/5/2024,40,11/10/2024,5,,11/29/2024,19,,12/11/2024,76,12/4/2024,29,12/9/2024,12/23/2024,88,1/16/2025,112,1/23/2025,119,
+Xuan Wang,Research Fellowship Cohort  3,9/26/2024,10/16/2024,20,10/18/2024,2,,11/26/2024,39,,11/8/2024,43,10/11/2024,-5,12/6/2024,1/30/2025,126,1/30/2025,126,2/19/2025,146,
+Sohail Vaghari,CLINAQ Cohort 1,10/15/2024,11/5/2024,21,11/18/2024,13,,3/14/2025,116,,2/24/2025,132,12/23/2024,,3/17/2025,4/4/2025,171,4/2/2025,169,4/10/2025,177,Requirement of EchoNet Deep Learning Model- Available via GitHub which is not permissable on AADB Infrastructure due to security measures
+Candice Adams-Mitchell,CLINAQ Cohort 1,10/15/2024,11/14/2024,30,11/25/2024,11,,1/16/2025,52,,3/5/2025,141,-,,2/7/2025,2/27/2025,135,3/6/2025,142,3/25/2025,161,
+Adebola Sulaiman,CLINAQ Cohort 1,10/15/2024,10/29/2024,14,12/3/2024,35,11/26/2024,,,,3/27/2025,163,,,,,,,,,,
+Asha Imanuelle,CLINAQ Cohort 1,10/15/2024,11/18/2024,34,12/1/2024,13,,2/12/2025,73,,3/14/2025,150,1/30/2025,,2/17/2025,3/17/2025,153,3/28/2025,164,4/15/2025,182,
+Yanmin Gong,CDP,9/23/2023,9/10/2024,353,11/21/2024,72,12/10/2024,12/23/2024,104,,1/31/2025,143,12/19/2024,,1/7/2025,2/27/2025,170,3/7/2025,178,3/20/2025,191,
+Ying Yin/Sean Vasaitis,CDP,9/23/2023,9/10/2024,353,12/11/2024,92,,3/12/2025,183,,9/30/2024,20,,,,4/9/2025,211,4/16/2025,218,4/17/2025,219,
+Debi Alexander,CDP,10/2/2024,1/9/2025,99,3/12/2025,62,,,,,,,,,,,,,,,,
+Eva Sterling/ Xinyan Zhang,Hub Pilot Program,9/16/2024,11/13/2024,58,11/13/2024,0,,12/6/2024,23,,2/28/2025,165,2/19/2025,98,,4/3/2025,199,4/3/2025,199,4/11/2025,207,
+Uduak George,PAIR,10/1/2024,12/12/2024,72,12/17/2024,5,,1/9/2025,23,,1/10/2025,101,12/16/2024,,1/21/2025,1/29/2025,120,2/21/2025,143,3/14/2025,164,
