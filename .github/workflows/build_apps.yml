@@ -56,6 +56,12 @@ jobs:
       
       - name: Create DMG
         run: |
+          # Sync filesystem and wait for any file operations to complete
+          sync
+          sleep 3
+          # Remove any existing DMG
+          rm -f AADB_Risk_Predictor.dmg
+          # Create the DMG
           hdiutil create -volname "AADB Risk Predictor" \
             -srcfolder dist/AADB_Risk_Predictor.app \
             -ov -format UDZO \
