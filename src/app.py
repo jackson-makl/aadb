@@ -247,6 +247,24 @@ def main():
     
     st.markdown("---")
     
+    # Sidebar - Add Quit button first
+    st.sidebar.markdown("### 🚪 Quit Application")
+    if st.sidebar.button("Stop App & Close", type="primary", use_container_width=True):
+        import os
+        import platform
+        st.success("✓ Shutting down server...")
+        st.info("You can close this browser window now.")
+        
+        # Kill the process on port 8501
+        if platform.system() == "Windows":
+            os.system("taskkill /F /FI \"WINDOWTITLE eq streamlit*\" > nul 2>&1")
+        else:  # macOS/Linux
+            os.system("lsof -ti:8501 | xargs kill -9 > /dev/null 2>&1")
+        
+        st.stop()
+    
+    st.sidebar.markdown("---")
+    
     # Sidebar for input
     st.sidebar.header("📝 Data Access Request Details")
     st.sidebar.markdown("""
