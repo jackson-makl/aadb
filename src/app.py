@@ -186,37 +186,37 @@ def get_recommendation(risk_level):
 
 def main():
     # Header
-    st.markdown('<div class="main-header">📊 AADB DUA Delay Prediction System</div>', 
+    st.markdown('<div class="main-header">📊 Delay Prediction System</div>', 
                 unsafe_allow_html=True)
     
-    st.markdown("""
-    **Comprehensive DUA + IRB Delay Prediction System**
+    # st.markdown("""
+    # **Comprehensive DUA + IRB Delay Prediction System**
     
-    This system predicts the risk of delays in **data access processes** for the 
-    **AIM-AHEAD Data Bridge** program by analyzing both **DUA (Data Use Agreement)** and 
-    **IRB (Institutional Review Board)** data using an optimized Random Forest ensemble model.
+    # This system predicts the risk of delays in **data access processes** for the 
+    # **AIM-AHEAD Data Bridge** program by analyzing both **DUA (Data Use Agreement)** and 
+    # **IRB (Institutional Review Board)** data using an optimized Random Forest ensemble model.
     
-    **Model Performance:**
-    - 📊 **Algorithm**: Random Forest (50 trees, optimized via GridSearchCV)
-    - ✅ **Cross-Validation F1**: 0.905 ± 0.086 (90.5% accuracy)
-    - 📈 **Training Data**: 56 samples from DUA + IRB joined datasets
-      - DUA Tracker: 54 samples (100% coverage)
-      - IRB Tracker: 38 samples (68% coverage, imputed where missing)
-    - 🎯 **Features Used**: 18 comprehensive features (15 actively contributing):
-      - **DUA Features (11)**: Timing, ratios, and delay flags
-      - **IRB Features (7)**: Process status, timing, and determination flags
+    # **Model Performance:**
+    # - 📊 **Algorithm**: Random Forest (50 trees, optimized via GridSearchCV)
+    # - ✅ **Cross-Validation F1**: 0.905 ± 0.086 (90.5% accuracy)
+    # - 📈 **Training Data**: 56 samples from DUA + IRB joined datasets
+    #   - DUA Tracker: 54 samples (100% coverage)
+    #   - IRB Tracker: 38 samples (68% coverage, imputed where missing)
+    # - 🎯 **Features Used**: 18 comprehensive features (15 actively contributing):
+    #   - **DUA Features (11)**: Timing, ratios, and delay flags
+    #   - **IRB Features (7)**: Process status, timing, and determination flags
     
-    **Top 5 Predictive Features:**
-    - Total DUA ratio (25% importance)
-    - PE ratio (14% importance)
-    - Intake ratio (13% importance)
-    - Intake delayed flag (12% importance)
-    - Intake month (12% importance)
+    # **Top 5 Predictive Features:**
+    # - Total DUA ratio (25% importance)
+    # - PE ratio (14% importance)
+    # - Intake ratio (13% importance)
+    # - Intake delayed flag (12% importance)
+    # - Intake month (12% importance)
     
-    **How It Works:** The ensemble model combines predictions from 50 decision trees, analyzing 
-    both DUA and IRB process indicators. This comprehensive approach captures delays across the 
-    entire data access workflow while ensemble averaging ensures reliable predictions.
-    """)
+    # **How It Works:** The ensemble model combines predictions from 50 decision trees, analyzing 
+    # both DUA and IRB process indicators. This comprehensive approach captures delays across the 
+    # entire data access workflow while ensemble averaging ensures reliable predictions.
+    # """)
     
     # Load model
     model_package = load_model()
@@ -593,69 +593,69 @@ def main():
         st.info("👈 Enter project details in the sidebar and click 'Predict Risk' to get started!")
         
         # Display DUA benchmarks
-        st.subheader("📏 DUA Process Benchmarks")
-        benchmarks = model_package['benchmarks']
+        # st.subheader("📏 DUA Process Benchmarks")
+        # benchmarks = model_package['benchmarks']
         
-        col1, col2, col3, col4 = st.columns(4)
-        with col1:
-            st.metric("OCGM Intake", f"{benchmarks['intake_turnaround']} days")
-        with col2:
-            st.metric("PE Turnaround", f"{benchmarks['pe_turnaround']} days")
-        with col3:
-            st.metric("PE to FE", f"{benchmarks['pe_to_fe_turnaround']} days")
-        with col4:
-            st.metric("NIH Target (DUA)", f"{benchmarks['dua_days']} days")
+        # col1, col2, col3, col4 = st.columns(4)
+        # with col1:
+        #     st.metric("OCGM Intake", f"{benchmarks['intake_turnaround']} days")
+        # with col2:
+        #     st.metric("PE Turnaround", f"{benchmarks['pe_turnaround']} days")
+        # with col3:
+        #     st.metric("PE to FE", f"{benchmarks['pe_to_fe_turnaround']} days")
+        # with col4:
+        #     st.metric("NIH Target (DUA)", f"{benchmarks['dua_days']} days")
         
-        st.markdown("---")
+        # st.markdown("---")
         
         # About section
-        st.subheader("ℹ️ About This System")
-        st.markdown("""
-        **Comprehensive Data Access Delay Prediction**
+        # st.subheader("ℹ️ About This System")
+        # st.markdown("""
+        # **Comprehensive Data Access Delay Prediction**
         
-        This system uses machine learning to predict delays across the **complete data access workflow**, 
-        analyzing both **DUA (Data Use Agreement)** and **IRB (Institutional Review Board)** processes.
+        # This system uses machine learning to predict delays across the **complete data access workflow**, 
+        # analyzing both **DUA (Data Use Agreement)** and **IRB (Institutional Review Board)** processes.
         
-        **Data Sources:**
-        - 📊 **DUA Tracker**: 54 samples (100% coverage) - Contractual process timing
-        - 🏥 **IRB Tracker**: 38 samples (68% coverage) - Ethics review process
-        - 🔗 **Joined Dataset**: 56 total samples with comprehensive feature set
+        # **Data Sources:**
+        # - 📊 **DUA Tracker**: 54 samples (100% coverage) - Contractual process timing
+        # - 🏥 **IRB Tracker**: 38 samples (68% coverage) - Ethics review process
+        # - 🔗 **Joined Dataset**: 56 total samples with comprehensive feature set
         
-        **18 Features Analyzed:**
+        # **18 Features Analyzed:**
         
-        *DUA Features (11):*
-        - Program type, intake month, acknowledgment status
-        - Timing: OCGM intake, PE turnaround, PE to FE
-        - Derived: Intake ratio, PE ratio, FE ratio, delay flags
+        # *DUA Features (11):*
+        # - Program type, intake month, acknowledgment status
+        # - Timing: OCGM intake, PE turnaround, PE to FE
+        # - Derived: Intake ratio, PE ratio, FE ratio, delay flags
         
-        *IRB Features (7):*
-        - Exempt status, NHSR classification, delay indicators
-        - Timing: Consult to submit, submit to determination, total IRB days
+        # *IRB Features (7):*
+        # - Exempt status, NHSR classification, delay indicators
+        # - Timing: Consult to submit, submit to determination, total IRB days
         
-        **Model Specifications:**
-        - 🎯 Algorithm: Random Forest (50 decision trees)
-        - ✅ Performance: 90.5% F1 Score (cross-validated)
-        - 📈 Feature Usage: 15 out of 18 features actively contributing
+        # **Model Specifications:**
+        # - 🎯 Algorithm: Random Forest (50 decision trees)
+        # - ✅ Performance: 90.5% F1 Score (cross-validated)
+        # - 📈 Feature Usage: 15 out of 18 features actively contributing
         
-        **How to Use:**
-        1. Enter DUA process details (required)
-        2. Add IRB process data if available (optional - will be imputed if missing)
-        3. Click "Predict Risk" for comprehensive assessment
-        4. Review risk level, probability, and recommendations
-        5. Download report for documentation
+        # **How to Use:**
+        # 1. Enter DUA process details (required)
+        # 2. Add IRB process data if available (optional - will be imputed if missing)
+        # 3. Click "Predict Risk" for comprehensive assessment
+        # 4. Review risk level, probability, and recommendations
+        # 5. Download report for documentation
         
-        **Risk Levels:**
-        - 🟢 **Low** (0-25%): Process on track, standard monitoring
-        - 🟡 **Medium** (25-50%): Watch closely, prepare interventions
-        - 🟠 **High** (50-75%): Active intervention recommended
-        - 🔴 **Critical** (75-100%): Urgent escalation required
+        # **Risk Levels:**
+        # - 🟢 **Low** (0-25%): Process on track, standard monitoring
+        # - 🟡 **Medium** (25-50%): Watch closely, prepare interventions
+        # - 🟠 **High** (50-75%): Active intervention recommended
+        # - 🔴 **Critical** (75-100%): Urgent escalation required
         
-        **Top Predictors:**
-        - Total DUA ratio vs benchmark (25% importance)
-        - PE turnaround ratio (14% importance)
-        - Intake turnaround ratio (13% importance)
-        - Early delay flags and seasonal patterns
-        """)
+        # **Top Predictors:**
+        # - Total DUA ratio vs benchmark (25% importance)
+        # - PE turnaround ratio (14% importance)
+        # - Intake turnaround ratio (13% importance)
+        # - Early delay flags and seasonal patterns
+        # """)
 
 
 if __name__ == "__main__":
